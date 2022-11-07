@@ -11,9 +11,10 @@ on:
       - master
     paths:
       - main.py
+      - study.py
 
 env:
-  GITHUB_NAME: yihong0618
+  GITHUB_NAME: yahui10922
   GITHUB_EMAIL: zouzou0208@gmail.com
 
 jobs:
@@ -48,7 +49,7 @@ jobs:
       - name: Generate new md
         run: |
           source venv/bin/activate
-          python main.py ${{ secrets.G_T }} ${{ github.repository }} --issue_number '${{ github.event.issue.number }}'
+          python study.py ${{ secrets.G_T }} ${{ github.repository }} --issue_number '${{ github.event.issue.number }}'
 
       - name: Push README
         run: |
