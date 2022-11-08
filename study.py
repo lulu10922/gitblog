@@ -17,7 +17,7 @@ FRIENDS_INFO_DICT = {
     "描述": "",
 }
 
-IGNORE_LABELS = [FRIENDS_LABEL]
+IGNORE_LABELS = FRIENDS_LABEL
 
 def gen_header(md, repo_name):
     with open(md, 'w', encoding='utf-8') as md:
@@ -57,22 +57,23 @@ def gen_friends(md, repo, me):
 
 def gen_other_labels(md, repo, me):
     labels = repo.get_labels()
-    s = ""
-    for label in labels:
-        if label.name in IGNORE_LABELS:
-            continue
 
-        issue_created_by_me = False
-        issues = repo.get_issues(labels = [label])
-        for issue in issues:
-            if issue.user.login == me:
-                if not issue_created_by_me:
-                    issue_created_by_me = True
-                    s += f"## {label.name}\n"
-                s += f"[{issue.title}]({issue.html_url})\n"
-    
     with open(md, 'a+', encoding='utf-8') as md:
-        md.write(s)
+        for label in labels:
+            if label.name in IGNORE_LABELS:
+                continue
+
+            issue_created_by_me = False
+            issues = repo.get_issues(labels = [label])
+            for issue in issues:
+                if issue.user.login == me:
+                    if not issue_created_by_me:
+                        issue_created_by_me = True
+                        s = f"## {label.name}\n"
+                    time = issue.created_at
+                    s += f"- [{issue.title}]({issue.html_url})  {time.year}-{time.month}-{time.day}\n"
+            md.write(s)
+
 
 def main(token, repo_name, issue_number):
     g = Github(token)
