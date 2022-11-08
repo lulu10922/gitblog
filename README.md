@@ -9,3 +9,6 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 - [蒸馒头](https://github.com/lulu10922/gitblog/issues/2)  2022-11-1
 ## Notebook
 - [信用卡](https://github.com/lulu10922/gitblog/issues/1)  2022-10-26
+## Programming
+- [小目标](https://github.com/lulu10922/gitblog/issues/5)  2022-11-8
+- [python学习](https://github.com/lulu10922/gitblog/issues/4)  2022-11-7
