@@ -8,6 +8,7 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 ## Cooking
 - [蒸馒头](https://github.com/lulu10922/gitblog/issues/2)  2022-11-1
 ## Notebook
+- [老婆第一次独自开车出门，祝她一切顺利~](https://github.com/lulu10922/gitblog/issues/7)  2022-11-16
 - [芯片知识](https://github.com/lulu10922/gitblog/issues/6)  2022-11-8
 - [信用卡](https://github.com/lulu10922/gitblog/issues/1)  2022-10-26
 ## Programming
