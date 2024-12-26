@@ -15,6 +15,7 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 - [芯片知识](https://github.com/lulu10922/gitblog/issues/6)  2022-11-8
 - [信用卡](https://github.com/lulu10922/gitblog/issues/1)  2022-10-26
 ## Programming
+- [raspberry-pi-os learning notes](https://github.com/lulu10922/gitblog/issues/15)  2024-12-26
 - [Makefile](https://github.com/lulu10922/gitblog/issues/14)  2024-12-17
 - [chatgpt用c语言实现的一个内存池](https://github.com/lulu10922/gitblog/issues/13)  2024-12-9
 - [c语言指针和数组的区别](https://github.com/lulu10922/gitblog/issues/12)  2024-12-9
